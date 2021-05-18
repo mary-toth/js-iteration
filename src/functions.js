@@ -208,11 +208,11 @@ function someoneToLove(strings) {
  *
  */
 
-// function objectKeys(objectOfHobbies) {
-
-//code
-
-// }
+function objectKeys(objectOfHobbies) {
+  return Object.entries(objectOfHobbies).map(
+    ([key, value]) => `${key} - ${value.title}`
+  )
+}
 
 /**
  *
