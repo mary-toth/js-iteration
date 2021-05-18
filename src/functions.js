@@ -30,9 +30,11 @@
 // Uncomment the function below. Then underneath, or replacing, the
 // line "// Your code here", write your implementation code.
 
-// function yelling(words) {
-//   // Your code here
-// }
+function yelling(words) {
+  const newUpperCaseWords = words.map(word => word.toUpperCase())
+
+  return newUpperCaseWords
+}
 
 /**
  *
@@ -44,9 +46,13 @@
  *
  */
 
-// function doubleTrouble(numbers) {
-//   // Your code here
-// }
+function doubleTrouble(numbers) {
+  const multiplyBy2 = number => number * 2
+
+  const doubledNumbers = numbers.map(multiplyBy2)
+
+  return doubledNumbers
+}
 
 /*
  * 3) Define a function named `stringyIndexes` that takes an array of
@@ -57,9 +63,10 @@
  *
  */
 
-// function stringyIndexes(strings) {
-//   // Your code here
-// }
+function stringyIndexes(strings) {
+  const newList = strings.map((word, index) => `${word} is at index ${index}`)
+  return newList
+}
 
 /*
  * 4) Define a function named onlyTheEvenSurvive that accepts an array of
@@ -69,9 +76,10 @@
  *
  */
 
-// function onlyTheEvenSurvive(numbers) {
-//   // Your code here
-// }
+function onlyTheEvenSurvive(numbers) {
+  const evenNumbers = numbers.filter(number => number % 2 === 0)
+  return evenNumbers
+}
 
 /*
  * 5) Define a function onlyTheEvenIndexedSurvive that accepts an array of
@@ -81,9 +89,10 @@
  *
  */
 
-// function onlyTheEvenIndexedSurvive(numbers) {
-//   // Your code here
-// }
+function onlyTheEvenIndexedSurvive(numbers) {
+  const evenNumberIndex = numbers.filter((number, index) => index % 2 === 0)
+  return evenNumberIndex
+}
 
 /*
  * 6)  Define a function bestMoviesOfTheYear that accepts an array of
@@ -102,9 +111,13 @@
  *
  */
 
-// function bestMoviesOfTheYear(movieObjectArray) {
-//   // Your code here
-// }
+function bestMoviesOfTheYear(movies, yearOfMovie) {
+  var coolMovies = movies
+    .filter(movie => movie.year === yearOfMovie && movie.score >= 90)
+    .map(movies => movies.name)
+
+  return coolMovies
+}
 
 /*
  * 7) Define a function everyoneIsOdd that accepts an array of
@@ -115,9 +128,10 @@
  *
  */
 
-// function everyoneIsOdd(numbers) {
-//   // Your code here
-// }
+function everyoneIsOdd(numbers) {
+  const oddNumbers = numbers.every(number => number % 2 != 0)
+  return oddNumbers
+}
 
 /*
  * 8) Define a function findTheNeedle that accepts an array of
@@ -128,9 +142,10 @@
  *
  */
 
-// function findTheNeedle(strings) {
-//   // Your code here
-// }
+function findTheNeedle(strings) {
+  const containsNeedle = strings.find(sentence => sentence.includes('needle'))
+  return containsNeedle
+}
 
 /*
  * 9) Define a function findTheNeedleIndex that accepts an array of
@@ -141,9 +156,10 @@
  *
  */
 
-// function findTheNeedleIndex(strings) {
-//   // Your code here
-// }
+function findTheNeedleIndex(strings) {
+  const containsNeedle = strings.findIndex(index => index.includes('needle'))
+  return containsNeedle
+}
 
 /*
  *` 10)  Define a function someoneToLove that accepts an array of
@@ -154,9 +170,10 @@
  *
  */
 
-// function someoneToLove(strings) {
-//   // Your code here
-// }
+function someoneToLove(strings) {
+  const fourChar = strings.some(word => word.length === 4)
+  return fourChar
+}
 
 /*
  * 11)  Define a function objectKeys that accepts an object of
@@ -192,7 +209,9 @@
  */
 
 // function objectKeys(objectOfHobbies) {
-//   // Your code here
+
+//code
+
 // }
 
 /**
